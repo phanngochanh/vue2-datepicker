@@ -103,6 +103,9 @@ export default {
     return (
       <transition name={`${prefixClass}-zoom-in-down`}>
         {this.visible && (
+			<div
+            style={{ top: this.top, left: this.left, position: 'absolute' }}
+          ></div>
           <div
             class={`${prefixClass}-datepicker-main ${prefixClass}-datepicker-popup`}
             style={{ top: this.top, left: this.left, position: 'absolute' }}
